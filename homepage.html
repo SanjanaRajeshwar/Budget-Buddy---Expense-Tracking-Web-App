@@ -1,0 +1,135 @@
+<html>
+<head>
+    
+    <title>Expense Tracker Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="img1/logobb.png" class="logo">Budget Buddy<span>.</span></a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="icons">
+        <a href="login.php" class="fas fa-user"> Login</a>
+    </div>
+</header>
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Budget Buddy</h3>
+        <span>Become financially aware</span>
+        <p>A finance tracking system for college students that is efficient, robust, and user-friendly.</p>
+    </div>
+    
+</section>
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span> about </span> us </h1>
+
+    <div class="row">
+
+        <div class="video-container">
+            <video src="budget buddy.mp4" loop autoplay muted></video>
+        </div>
+
+        <div class="content">
+            <h3>why choose us?</h3>
+            <p>Rather than writing down all your expenses in a document and then manually calculating the total expenses, Budget Buddy provides an easy-to-use budget tracker that with its user-friendly UI makes keeping an account of spendings and interpreting past trends effortless. <br>
+You don't have to maintain excel sheets or pay monthly subscription fees to apps to manage and track your expenses!!
+</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="icons-container">
+
+    <div class="icons">
+        <img src="img1/icon1.png">
+        <div class="info">
+            <h3>Add/ Edit Expenses</h3>
+            <span>Spent on what and where?</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="img1/icon2.jpg">
+        <div class="info">
+            <h3>View Past Expenditure</h3>
+            <span>along with amazing visualisations</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="img1/icon3.png">
+        <div class="info">
+            <h3>Get alerts</h3>
+            <span>always on time</span>
+        </div>
+    </div>
+   
+</section>
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span> Contact </span> Us </h1>
+
+    <div class="row">
+        <form name="contactus" action="email.php" method="post">
+            <input type="text" placeholder="Enter your Full Name" class="box" name="usern">
+            <input type="email" placeholder="Enter your Email ID" class="box" name="usere">
+            <input type="number" placeholder="Enter your Phone Number" class="box" >
+            <textarea name="message" class="box" placeholder="Leave a Message/ Feedback" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+		<script>
+function onSend()
+{
+alert('Message Sent!!');
+}
+</script>
+        </form>
+
+        <div class="image">
+            <img src="img1/contacts.jpg">
+        </div>
+
+    </div>
+
+</section>
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#">TECH TEAM</a>
+            <a href="#">+91-7042105715</a>
+            <a href="#">budget.buddy@gmail.com</a>
+            <a href="#">Vellore, Tamil Nadu, India - 632014</a>
+        </div>
+    </div>
+
+    <div class="credit"> <span> Budget Buddy. </span> | All Rights Reserved </div>
+
+</section>
+</body>
+</html>
