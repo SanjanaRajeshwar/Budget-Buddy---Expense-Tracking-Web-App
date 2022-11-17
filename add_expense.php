@@ -50,14 +50,14 @@ require('phpmailer/PHPMailer.php');
     $mail->Subject = 'ALERT!! You have exceeded your set limit';
     $mail->Body    = 'Hey Buddy<br> Kindly note that <b>you have exceeded your set limit.</b> It is time to get your expenses under control and become financially smart.<br> Login to your account on budget buddy and check out your past expenditures!!<br>Budget Buddy';
     $mail->send();
-    echo 'Message has been sent';
+    //echo 'Message has been sent';
     $sentalert = true;
 }
 
 if($spending > $budgetamt && $sentbud === false){
-require('phpmailer/Exception.php');
-require('phpmailer/SMTP.php');
-require('phpmailer/PHPMailer.php');
+//require('phpmailer/Exception.php');
+//require('phpmailer/SMTP.php');
+//require('phpmailer/PHPMailer.php');
     $mail = new PHPMailer(true);
     $mail->isSMTP();                                            
     $mail->Host       = 'smtp.gmail.com';                     
@@ -78,7 +78,7 @@ require('phpmailer/PHPMailer.php');
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    echo 'Message has been sent';
+    //echo 'Message has been sent';
     $sentbud = true;
 }
 
